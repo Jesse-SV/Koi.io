@@ -1,0 +1,33 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title %}Dashboard{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/dashboard.css' %}">
+{% endblock %}
+    
+{% block content%}
+
+<div class="container-wrapper">
+    <div class="container-rectangle">
+       <div class="white-rectangles">
+        <div class="block">
+            <h1>{{estoqueTotal}}</h1>
+            <span>Estoque total</span>
+        </div>
+        <div class="block">
+            <h1>R${{valorEstoqueTotal}}</h1>
+            <span>Valor Estoque Total Mensal</span>
+        </div>
+        <div class="block">
+            <h1>{{EntradaProdutosMensal}}</h1>
+            <span>Entrada de Produtos Mensal</span>
+        </div>
+        <div class="block">
+            <h1>{{SaidaProdutosMensal}}</h1>
+            <span>Saida Produtos Mensal</span>
+        </div>
+       </div>
+    </div>
+</div>
+
+{% endblock %}

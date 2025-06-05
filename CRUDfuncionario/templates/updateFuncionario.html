@@ -1,0 +1,65 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title %}Atualizar Funcionário{% endblock %}
+    
+{% block content%}
+<link rel="stylesheet" href="{% static 'css/forms.css' %}">
+
+<button onclick="history.back(); return false;" class="btn btn-light" style="margin: 4px">
+    <i class="bi bi-arrow-return-left"></i>
+</button>
+
+<div class="retangulo_Editar">
+    <div class="title_Editar">Editar Funcionario</div>
+        <form action="{% url 'updateFuncionario_view' funcionario.idFuncionario %}" class="editar-form" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <!-- Campo de Identificação -->
+                <div class="form-control_campos">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" value="{{funcionario.username}}">
+                </div>
+
+                <div class="form-control_campos">
+                    <label for="enderecoFuncionario">Endereço:</label>
+                    <input type="text" id="enderecoFuncionario" name="enderecoFuncionario" value="{{funcionario.enderecoFuncionario}}">
+                </div>
+
+                <div class="form-control_campos">
+                    <label for="CPF">CPF:</label>
+                    <input type="text" id="CPF" name="CPF" value="{{funcionario.CPF}}">
+                </div>
+
+                <div class="form-control_campos">
+                    <label for="CEP">CEP:</label>
+                    <input type="text" id="CEP" name="CEP" value="{{funcionario.CEP}}">
+                </div>
+
+                <div class="form-control_campos">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" value="{{funcionario.telefone}}">
+                </div>
+
+                <div class="form-control_campos">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="{{funcionario.email}}">
+                </div>
+
+                <div class="form-control_campos">
+                    <label for="funcao">Função:</label>
+                    <input type="text" id="funcao" name="funcao" value="{{funcionario.funcao}}">
+                </div>
+            </div>
+            {% if messages %}
+                <div class="alert alert-danger" role="alert">
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+            </div>
+            {% endif %}
+            <button type="submit" class="btn-submit">Atualizar</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

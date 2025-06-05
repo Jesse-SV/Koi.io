@@ -1,0 +1,56 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title %}Cadastrar Fornecedor{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/fornecedor.css' %}">
+{% endblock %}
+    
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/forms.css' %}">
+
+<button onclick="history.back(); return false;" class="btn btn-light" style="margin: 4px">
+    <i class="bi bi-arrow-return-left"></i>
+</button>
+
+<div class="retangulo_Editar">
+    <h2>Cadastrar Novo Fornecedor</h2>
+    <form method="POST" action="{% url 'cadastrarFornecedor_view' %}">
+        {% csrf_token %}
+        <div class="form-group">
+            <div class="form-control_campos">
+                <label for="nomeFornecedor">Nome do Fornecedor:</label>
+                <input type="text" class="form-control" maxlength="50" id="nomeFornecedor" name="nomeFornecedor" required>
+            </div>
+
+            <div class="form-control_campos">
+                <label for="endereco">Endereço:</label>
+                <input type="text" class="form-control" maxlength="100" id="endereco" name="endereco" required>
+            </div>
+
+            <div class="form-control_campos">
+                <label for="telefone">Telefone:</label>
+                <input type="text" class="form-control" maxlength="11" id="telefone" name="telefone" required>
+            </div>
+
+            <div class="form-control_campos">
+                <label for="cep">CEP:</label>
+                <input type="text" class="form-control" maxlength="10" id="CEP" name="cep" required>
+            </div>
+
+            <div class="form-control_campos">
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" class="form-control" maxlength="18" id="CNPJ" name="cnpj" required>
+            </div>
+        </div>
+        {% if messages %}
+            <div class="alert alert-danger" role="alert">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </div>
+        {% endif %}
+        <button type="submit" class="btn-submit">Cadastrar</button>
+    </form>
+</div>
+
+{% endblock %}

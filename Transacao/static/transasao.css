@@ -1,0 +1,7 @@
+#detalhes1, #detalhes2 {
+    z-index: 1; /* Ensure details appear on top of other elements */
+    background-color: white; /* Set background color for contrast */
+    border: 1px solid #ccc; /* Add border for visual separation */
+    padding: 10px; /* Add some padding for readability */
+  }
+  

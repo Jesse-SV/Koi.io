@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/Clogin.css' %}">
+</head>
+
+<body>
+    
+    <div class="retangulo">
+      <div class="container-koio">
+        <a href="https://ibb.co/T8bDhzw">
+          <img src="https://i.ibb.co/Yky4jvN/koio.png" width="400" height="400" alt="koio" border="0">
+        </a>
+      </div>
+        <div class="title">Bem-vindo ao
+            <div class="title_koi">KOI.IO</div>
+        </div>
+
+        <div class="retangulo_login">
+            <div class="title_login">LOGIN</div>
+            <form action="{% url 'login' %}" method="POST" class="login-form">{% csrf_token %}
+                {% if messages %}
+                    <div class="alert alert-danger" role="alert">
+                        {% for message in messages %}
+                            {{ message }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                <div class="custom-form-group">
+                    <div class="custom-form-control" id="username">
+                        <input type="text" id="username" name="username" placeholder="Digite seu email">
+                    </div>
+                </div>
+                <div class="custom-form-group">
+                    <div class="custom-form-control" id="password">
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">ENTRAR</button>
+                <div class="forgot-password">
+                    <a href="{% url 'password_reset' %}">Esqueci minha senha</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

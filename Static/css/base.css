@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+*:focus {
+    outline: none;
+}
+.navbar-nav .nav-item{
+    margin-right: 20px;
+}
+.rectangle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgba(200, 51, 176), rgba(255, 99, 71));
+    height: 50px;
+    width: 100%;
+    padding: 20px;
+}
+#searchInput {
+    width: 100%;
+    border-radius: 5px 0px 0px 5px;
+}
+.btn-search{
+    color: white;
+    background-color: #273145;
+    border-radius: 0px 5px 5px 0px;
+}
+.btn-dark{
+    background-color: #273145;
+}
+.table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.table thead th, .table tbody td {
+    text-align: center;
+}
+
+.dropdown-menu {
+  /* Estilos do dropdown */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.dropdown-list {
+  /* Estilos da lista de produtos */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.dropdown-list li {
+  /* Estilos dos itens da lista */
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+}
+  
+.entrada {
+    background-color: #90EE90; /* Verde */
+}
+
+.saida {
+    background-color: #FFB6C1; /* Vermelho claro */
+}
+.retangulo_esq {
+    width: 600px;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 46px;
+    bottom: 0;
+}
+

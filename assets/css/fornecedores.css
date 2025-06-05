@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap');
+*{
+    margin:auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+#menu-horizontal ul{
+    list-style: none;
+    padding: 0;
+    background-color: #454545;
+    margin: 0px;
+}
+/* Deixa na horizontal */
+#menu-horizontal ul li{
+    display: inline;
+}
+#menu-horizontal ul li a{
+    color: #fff;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .3s;
+}
+#menu-horizontal ul li a:hover{
+    background: linear-gradient(90deg, #C833B0 -75.99%, #FF5722 106.42%, #FF6347 106.44%);
+   
+}
+#menu-horizontal ul li:last-child a{
+    float: right;
+}

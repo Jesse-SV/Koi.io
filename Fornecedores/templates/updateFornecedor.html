@@ -1,0 +1,57 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title %}Cadastrar Fornecedor{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/fornecedor.css' %}">
+{% endblock %}
+    
+{% block content%}
+<link rel="stylesheet" href="{% static 'css/forms.css' %}">
+
+<button onclick="history.back(); return false;" class="btn btn-light" style="margin: 4px">
+    <i class="bi bi-arrow-return-left"></i>
+</button>
+
+<div class="retangulo_Editar">
+    <div class="title_Editar">Editar Fornecedor</div>
+        <form action="{% url 'updateFornecedor_view' fornecedor.idFornecedor %}" class="editar-form" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <!-- Campo de Identificação -->
+                <div class="form-control_campos">
+                    <label for="username">Username:</label>
+                    <input type="text" id="nomeFornecedor" name="nomeFornecedor" value="{{fornecedor.nomeFornecedor}}">
+                </div>
+
+                <div class="form-control_campos">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" value="{{fornecedor.telefone}}">
+                </div>
+
+                <div class="form-control_campos">
+                    <label for="CNPJ">CNPJ:</label>
+                    <input type="text" id="cnpj" name="cnpj" value="{{fornecedor.cnpj}}">
+                </div>
+
+                <div class="form-control_campos">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" value="{{fornecedor.cep}}">
+                </div>
+
+                <div class="form-control_campos">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" value="{{fornecedor.endereco}}">
+                </div>
+            </div> 
+            {% if messages %}
+                <div class="alert alert-danger" role="alert">
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+            </div>
+            {% endif %}
+            <button type="submit" class="btn-submit">Atualizar</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

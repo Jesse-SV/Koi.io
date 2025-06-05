@@ -1,0 +1,70 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title %}Cadastrar Produto{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/forms.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<button onclick="history.back(); return false;" class="btn btn-light" style="margin: 4px">
+    <i class="bi bi-arrow-return-left"></i>
+</button>
+
+<div class="retangulo_Editar">
+    <div class="title_Editar">Editar Produto</div>
+        <form action="{% url 'updateProdutos_view' produto.idProduto %}" class="editar-form" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <!-- Campo de Identificação -->
+                <div class="form-control_campos">
+                    <label for="nomeProduto">Nome Produto:</label>
+                    <input type="text" id="nomeProduto" name="nomeProduto" value="{{produto.nomeProduto}}">
+                </div>
+
+                <div class="Select-Fornecedor">
+                    <label class="form-label" for="fornecedor">Fornecedor:</label>
+                    <select class="idFornecedor" id="idFornecedor" name="idFornecedor">
+                        {% for fornecedor in fornecedores %}
+                            <option value="{{ fornecedor.idFornecedor }}">{{ fornecedor.nomeFornecedor }}</option>
+                        {% endfor %}
+                </select>
+                </div>
+                <div class="Select-Fornecedor">
+                    <label class="form-label" for="fornecedor">Transação:</label>
+                    <select class="idFornecedor" id="idFornecedor" name="idTransacao">
+                        {% for transacao in transacoes %}
+                            <option value="{{ transacao.idTransacao }}">{{ transacao.idTransacao }}</option>
+                        {% endfor %}
+                </select>
+                </div>
+                <div class="form-control_campos">
+                    <label for="valorUnit">Valor Unitário:</label>
+                    <input type="text" id="valorUnit" name="valorUnit" value="{{produto.valorUnit}}">
+                </div>
+
+                <div class="form-control_campos">
+                    <label for="qntEstoque">Quantidade de Estoque:</label>
+                    <input type="text" id="qntEstoque" name="qntEstoque" value="{{produto.qntEstoque}}">
+                </div>
+
+                <div class="form-control_campos">
+                    <label for="categoria">Categoria:</label>
+                    <input type="text" id="categoria" name="categoria" value="{{produto.categoria}}">
+                </div>
+
+                <div class="form-control_campos">
+                    <label for="subCategoria">Sub-Categoria:</label>
+                    <input type="text" id="subCategoria" name="subCategoria" value="{{produto.subCategoria}}">
+                </div class="form-control_campos">
+
+                <div class="form-control_campos">
+                    <label for="marcaProduto">Marca:</label>
+                    <input type="text" id="marcaProduto" name="marcaProduto" value="{{produto.marcaProduto}}">
+                </div>
+            </div>
+            <button type="submit" class="btn-submit">Atualizar</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

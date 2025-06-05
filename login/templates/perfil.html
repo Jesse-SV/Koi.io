@@ -1,0 +1,70 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title %} Perfil {% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/perfil.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbkTLCG/BNzgDwbzYtLmW70LtYn firstname-account@bp.comicated CSS-minimizer content and minify in production mode." crossorigin="anonymous">
+{% endblock %}
+
+{% block content %}
+
+<button onclick="history.back(); return false;" class="btn btn-light" style="margin: 4px">
+    <i class="bi bi-arrow-return-left"></i>
+</button>
+
+<div class="container rounded bg-white mt-5 mb-5 ">
+    <div class="row">
+      <div class="col-12 col-md-3 border-bottom border-md-right py-3 py-md-5">
+        <div class="d-flex flex-column align-items-center text-center">
+            <div class="d-flex justify-content-between align-items-center mb-3 mt-3">
+                <h4 class="text-right">Perfil do Usuário</h4>
+            </div>
+          <img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+          <span class="font-weight-bold">{{ user.username }}</span>
+          <span class="text-black-50">{{ user.email }}</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-7 py-3 py-md-5">
+        <form action="{% url 'atualizar_perfil' user.idFuncionario %}" class="editar-form" method="POST">
+        {% csrf_token %}
+          <div class="row mt-2">
+            <div class="col-12">
+              <label class="labels">Nome</label>
+              <input type="text" class="form-control" id="username" name="username" value="{{ user.username }}">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <label class="labels">Telefone</label>
+              <input type="text" class="form-control" id="telefone" name="telefone" value="{{ user.telefone }}">
+            </div>
+            <div class="col-12">
+              <label class="labels">Email</label>
+              <input type="email" class="form-control" id="email" name="email" value="{{ user.email }}">
+            </div>
+            <div class="col-12">
+              <label class="labels">CPF</label>
+              <input type="text" class="form-control" id="CPF" name="CPF" value="{{ user.CPF }}">
+            </div>
+            <div class="col-12">
+              <label class="labels">Endereço</label>
+              <input type="text" class="form-control" id="enderecoFuncionario" name="enderecoFuncionario" value="{{ user.enderecoFuncionario }}">
+            </div>
+            <div class="col-12">
+              <label class="labels">CEP</label>
+              <input type="text" class="form-control" id="CEP" name="CEP" value="{{ user.CEP }}">
+            </div>
+            <div class="col-12">
+              <label class="labels">Função</label>
+              <input type="text" class="form-control" id="funcao" name="funcao" value="{{user.funcao}}">
+            </div>
+          </div>
+          <div class="mt-4 text-right">
+            <button class="btn btn-outline-success" type="submit">Atualizar</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

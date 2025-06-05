@@ -1,0 +1,963 @@
+[
+ {
+    
+  "Nome": "Arroz",
+  "Valor Unit.": 3.99,
+  "Qnt. Estoque": 100,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Grãos",
+  "Marca Produto": "Tio João"
+ },
+ {
+  "Nome": "Feijão",
+  "Valor Unit.": 2.49,
+  "Qnt. Estoque": 75,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Grãos",
+  "Marca Produto": "Camil"
+ },
+ {
+  "Nome": "Leite",
+  "Valor Unit.": 2.99,
+  "Qnt. Estoque": 50,
+  "Categoria": "Laticínios",
+  "Subcategoria": "Leite",
+  "Marca Produto": "Parmalat"
+ },
+ {
+  "Nome": "Sabonete",
+  "Valor Unit.": 1.25,
+  "Qnt. Estoque": 200,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Dove"
+ },
+ {
+  "Nome": "Maçã",
+  "Valor Unit.": 0.99,
+  "Qnt. Estoque": 150,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Frutas",
+  "Marca Produto": "Fuji"
+ },
+ {
+  "Nome": "Sabão em Pó",
+  "Valor Unit.": 4.49,
+  "Qnt. Estoque": 80,
+  "Categoria": "Limpeza",
+  "Subcategoria": "Lavanderia",
+  "Marca Produto": "Omo"
+ },
+ {
+  "Nome": "Frango",
+  "Valor Unit.": 5.99,
+  "Qnt. Estoque": 60,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Carnes",
+  "Marca Produto": "Sadia"
+ },
+ {
+  "Nome": "Shampoo",
+  "Valor Unit.": 3.79,
+  "Qnt. Estoque": 90,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Pantene"
+ },
+ {
+  "Nome": "Cenoura",
+  "Valor Unit.": 1.49,
+  "Qnt. Estoque": 120,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Legumes",
+  "Marca Produto": "Orgânica"
+ },
+ {
+  "Nome": "Papel Higiênico",
+  "Valor Unit.": 2.99,
+  "Qnt. Estoque": 100,
+  "Categoria": "Limpeza",
+  "Subcategoria": "Banheiro",
+  "Marca Produto": "Neve"
+ },
+ {
+  "Nome": "Peito de Frango",
+  "Valor Unit.": 7.99,
+  "Qnt. Estoque": 50,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Carnes",
+  "Marca Produto": "Sadia"
+ },
+ {
+  "Nome": "Maionese",
+  "Valor Unit.": 3.49,
+  "Qnt. Estoque": 60,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Condimentos",
+  "Marca Produto": "Hellmann's"
+ },
+ {
+  "Nome": "Detergente",
+  "Valor Unit.": 1.99,
+  "Qnt. Estoque": 120,
+  "Categoria": "Limpeza",
+  "Subcategoria": "Louça",
+  "Marca Produto": "Ypê"
+ },
+ {
+  "Nome": "Batata",
+  "Valor Unit.": 1.29,
+  "Qnt. Estoque": 80,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Legumes",
+  "Marca Produto": "Nacional"
+ },
+ {
+  "Nome": "Escova de Dentes",
+  "Valor Unit.": 1.49,
+  "Qnt. Estoque": 150,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Colgate"
+ },
+ {
+  "Nome": "Salsicha",
+  "Valor Unit.": 2.49,
+  "Qnt. Estoque": 70,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Carnes",
+  "Marca Produto": "Perdigão"
+ },
+ {
+  "Nome": "Arroz Integral",
+  "Valor Unit.": 4.99,
+  "Qnt. Estoque": 60,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Grãos",
+  "Marca Produto": "Uncle Ben's"
+ },
+ {
+  "Nome": "Tomate",
+  "Valor Unit.": 2.29,
+  "Qnt. Estoque": 90,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Legumes",
+  "Marca Produto": "Nacional"
+ },
+ {
+  "Nome": "Papel Toalha",
+  "Valor Unit.": 3.29,
+  "Qnt. Estoque": 40,
+  "Categoria": "Limpeza",
+  "Subcategoria": "Banheiro",
+  "Marca Produto": "Kimberly-Clark"
+ },
+ {
+  "Nome": "Shampoo Infantil",
+  "Valor Unit.": 2.99,
+  "Qnt. Estoque": 70,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Johnson's"
+ },
+ {
+  "Nome": "Abacaxi",
+  "Valor Unit.": 2.99,
+  "Qnt. Estoque": 40,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Frutas",
+  "Marca Produto": "Del Monte"
+ },
+ {
+  "Nome": "Cereal Matinal",
+  "Valor Unit.": 4.79,
+  "Qnt. Estoque": 80,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Cereais",
+  "Marca Produto": "Kellogg's"
+ },
+ {
+  "Nome": "Óleo de Cozinha",
+  "Valor Unit.": 4.49,
+  "Qnt. Estoque": 100,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Óleos",
+  "Marca Produto": "Liza"
+ },
+ {
+  "Nome": "Laranja",
+  "Valor Unit.": 1.29,
+  "Qnt. Estoque": 120,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Frutas",
+  "Marca Produto": "Laranjinha"
+ },
+ {
+  "Nome": "Alvejante",
+  "Valor Unit.": 2.99,
+  "Qnt. Estoque": 60,
+  "Categoria": "Limpeza",
+  "Subcategoria": "Lavanderia",
+  "Marca Produto": "Qboa"
+ },
+ {
+  "Nome": "Massa de Tomate",
+  "Valor Unit.": 1.99,
+  "Qnt. Estoque": 90,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Molhos",
+  "Marca Produto": "Elefante"
+ },
+ {
+  "Nome": "Alface",
+  "Valor Unit.": 1.49,
+  "Qnt. Estoque": 100,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Legumes",
+  "Marca Produto": "Hortifruti"
+ },
+ {
+  "Nome": "Iogurte",
+  "Valor Unit.": 2.29,
+  "Qnt. Estoque": 70,
+  "Categoria": "Laticínios",
+  "Subcategoria": "Iogurte",
+  "Marca Produto": "Danone"
+ },
+ {
+  "Nome": "Ração para Cães",
+  "Valor Unit.": 15.99,
+  "Qnt. Estoque": 50,
+  "Categoria": "Pet Shop",
+  "Subcategoria": "Alimentação",
+  "Marca Produto": "Pedigree"
+ },
+ {
+  "Nome": "Amaciante",
+  "Valor Unit.": 2.99,
+  "Qnt. Estoque": 60,
+  "Categoria": "Limpeza",
+  "Subcategoria": "Lavanderia",
+  "Marca Produto": "Comfort"
+ },
+ {
+  "Nome": "Cerveja",
+  "Valor Unit.": 1.99,
+  "Qnt. Estoque": 100,
+  "Categoria": "Bebidas",
+  "Subcategoria": "Alcoólicas",
+  "Marca Produto": "Skol"
+ },
+ {
+  "Nome": "Pão Francês",
+  "Valor Unit.": 0.79,
+  "Qnt. Estoque": 200,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Pães",
+  "Marca Produto": "Panco"
+ },
+ {
+  "Nome": "Ovos",
+  "Valor Unit.": 2.29,
+  "Qnt. Estoque": 50,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Ovos",
+  "Marca Produto": "Fazenda"
+ },
+ {
+  "Nome": "Desinfetante",
+  "Valor Unit.": 2.49,
+  "Qnt. Estoque": 70,
+  "Categoria": "Limpeza",
+  "Subcategoria": "Casa",
+  "Marca Produto": "Lysoform"
+ },
+ {
+  "Nome": "Pão de Forma",
+  "Valor Unit.": 2.49,
+  "Qnt. Estoque": 60,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Pães",
+  "Marca Produto": "Wickbold"
+ },
+ {
+  "Nome": "Cerveja Sem Álcool",
+  "Valor Unit.": 2.49,
+  "Qnt. Estoque": 40,
+  "Categoria": "Bebidas",
+  "Subcategoria": "Não Alcoólicas",
+  "Marca Produto": "Heineken"
+ },
+ {
+  "Nome": "Fraldas",
+  "Valor Unit.": 14.99,
+  "Qnt. Estoque": 80,
+  "Categoria": "Bebês",
+  "Subcategoria": "Fraldas",
+  "Marca Produto": "Pampers"
+ },
+ {
+  "Nome": "Biscoitos",
+  "Valor Unit.": 1.79,
+  "Qnt. Estoque": 120,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Biscoitos",
+  "Marca Produto": "Nestlé"
+ },
+ {
+  "Nome": "Leite Condensado",
+  "Valor Unit.": 2.79,
+  "Qnt. Estoque": 60,
+  "Categoria": "Laticínios",
+  "Subcategoria": "Sobremesas",
+  "Marca Produto": "Moça"
+ },
+ {
+  "Nome": "Vinho Tinto",
+  "Valor Unit.": 8.99,
+  "Qnt. Estoque": 40,
+  "Categoria": "Bebidas",
+  "Subcategoria": "Vinhos",
+  "Marca Produto": "Casillero del Diablo"
+ },
+ {
+  "Nome": "Sabonete Líquido",
+  "Valor Unit.": 3.29,
+  "Qnt. Estoque": 80,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Nivea"
+ },
+ {
+  "Nome": "Saco de Lixo",
+  "Valor Unit.": 2.29,
+  "Qnt. Estoque": 100,
+  "Categoria": "Limpeza",
+  "Subcategoria": "Casa",
+  "Marca Produto": "Plasvale"
+ },
+ {
+  "Nome": "Margarina",
+  "Valor Unit.": 2.49,
+  "Qnt. Estoque": 50,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Condimentos",
+  "Marca Produto": "Becel"
+ },
+ {
+  "Nome": "Salame",
+  "Valor Unit.": 5.99,
+  "Qnt. Estoque": 70,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Carnes",
+  "Marca Produto": "Sadia"
+ },
+ {
+  "Nome": "Água Mineral",
+  "Valor Unit.": 1.29,
+  "Qnt. Estoque": 150,
+  "Categoria": "Bebidas",
+  "Subcategoria": "Água",
+  "Marca Produto": "Crystal"
+ },
+ {
+  "Nome": "Molho de Soja",
+  "Valor Unit.": 2.29,
+  "Qnt. Estoque": 60,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Molhos",
+  "Marca Produto": "Kikkoman"
+ },
+ {
+  "Nome": "Café em Grãos",
+  "Valor Unit.": 7.49,
+  "Qnt. Estoque": 40,
+  "Categoria": "Bebidas",
+  "Subcategoria": "Café",
+  "Marca Produto": "Orfeu"
+ },
+ {
+  "Nome": "Papel Alumínio",
+  "Valor Unit.": 2.79,
+  "Qnt. Estoque": 100,
+  "Categoria": "Utensílios",
+  "Subcategoria": "Cozinha",
+  "Marca Produto": "Alutec"
+ },
+ {
+  "Nome": "Batom",
+  "Valor Unit.": 4.99,
+  "Qnt. Estoque": 80,
+  "Categoria": "Beleza",
+  "Subcategoria": "Maquiagem",
+  "Marca Produto": "Maybelline"
+ },
+ {
+  "Nome": "Alho",
+  "Valor Unit.": 1.79,
+  "Qnt. Estoque": 70,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Temperos",
+  "Marca Produto": "Sabor Brasil"
+ },
+ {
+  "Nome": "Molho de Tomate",
+  "Valor Unit.": 1.99,
+  "Qnt. Estoque": 90,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Molhos",
+  "Marca Produto": "Heinz"
+ },
+ {
+  "Nome": "Amendoim",
+  "Valor Unit.": 3.29,
+  "Qnt. Estoque": 60,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Snacks",
+  "Marca Produto": "Elma Chips"
+ },
+ {
+  "Nome": "Condicionador",
+  "Valor Unit.": 3.99,
+  "Qnt. Estoque": 80,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Seda"
+ },
+ {
+  "Nome": "Linguiça",
+  "Valor Unit.": 4.29,
+  "Qnt. Estoque": 40,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Carnes",
+  "Marca Produto": "Perdigão"
+ },
+ {
+  "Nome": "Manteiga",
+  "Valor Unit.": 3.49,
+  "Qnt. Estoque": 50,
+  "Categoria": "Laticínios",
+  "Subcategoria": "Manteiga",
+  "Marca Produto": "Aviação"
+ },
+ {
+  "Nome": "Lâmpada LED",
+  "Valor Unit.": 5.99,
+  "Qnt. Estoque": 60,
+  "Categoria": "Casa",
+  "Subcategoria": "Iluminação",
+  "Marca Produto": "Philips"
+ },
+ {
+  "Nome": "Queijo Mussarela",
+  "Valor Unit.": 8.49,
+  "Qnt. Estoque": 70,
+  "Categoria": "Laticínios",
+  "Subcategoria": "Queijo",
+  "Marca Produto": "Tirolez"
+ },
+ {
+  "Nome": "Ar-condicionado",
+  "Valor Unit.": 999.99,
+  "Qnt. Estoque": 30,
+  "Categoria": "Eletrodomésticos",
+  "Subcategoria": "Climatização",
+  "Marca Produto": "LG"
+ },
+ {
+  "Nome": "Cebola",
+  "Valor Unit.": 1.49,
+  "Qnt. Estoque": 80,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Legumes",
+  "Marca Produto": "Nacional"
+ },
+ {
+  "Nome": "Creme Dental",
+  "Valor Unit.": 2.49,
+  "Qnt. Estoque": 100,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Sensodyne"
+ },
+ {
+  "Nome": "Espaguete",
+  "Valor Unit.": 1.79,
+  "Qnt. Estoque": 90,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Massas",
+  "Marca Produto": "Barilla"
+ },
+ {
+  "Nome": "Leite de Amêndoas",
+  "Valor Unit.": 3.99,
+  "Qnt. Estoque": 50,
+  "Categoria": "Laticínios",
+  "Subcategoria": "Alternativos",
+  "Marca Produto": "Silk"
+ },
+ {
+  "Nome": "Papel Higiênico Reciclado",
+  "Valor Unit.": 2.49,
+  "Qnt. Estoque": 70,
+  "Categoria": "Limpeza",
+  "Subcategoria": "Banheiro",
+  "Marca Produto": "Naturella"
+ },
+ {
+  "Nome": "Cerveja Artesanal",
+  "Valor Unit.": 6.99,
+  "Qnt. Estoque": 40,
+  "Categoria": "Bebidas",
+  "Subcategoria": "Cervejas",
+  "Marca Produto": "Craft Brew Co."
+ },
+ {
+  "Nome": "Lasanha Pronta",
+  "Valor Unit.": 4.49,
+  "Qnt. Estoque": 80,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Pratos Prontos",
+  "Marca Produto": "Sadia"
+ },
+ {
+  "Nome": "Ração para Gatos",
+  "Valor Unit.": 12.99,
+  "Qnt. Estoque": 60,
+  "Categoria": "Pet Shop",
+  "Subcategoria": "Alimentação",
+  "Marca Produto": "Whiskas"
+ },
+ {
+  "Nome": "Máquina de Café",
+  "Valor Unit.": 89.99,
+  "Qnt. Estoque": 30,
+  "Categoria": "Eletrodomésticos",
+  "Subcategoria": "Cafeteiras",
+  "Marca Produto": "Nespresso"
+ },
+ {
+  "Nome": "Queijo Parmesão",
+  "Valor Unit.": 9.99,
+  "Qnt. Estoque": 50,
+  "Categoria": "Laticínios",
+  "Subcategoria": "Queijo",
+  "Marca Produto": "Parmigiano Reggiano"
+ },
+ {
+  "Nome": "Tinta para Cabelo",
+  "Valor Unit.": 6.49,
+  "Qnt. Estoque": 70,
+  "Categoria": "Beleza",
+  "Subcategoria": "Coloração",
+  "Marca Produto": "L'Oréal"
+ },
+ {
+  "Nome": "Sopa em Lata",
+  "Valor Unit.": 2.99,
+  "Qnt. Estoque": 100,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Enlatados",
+  "Marca Produto": "Campbell's"
+ },
+ {
+  "Nome": "Detergente Ecológico",
+  "Valor Unit.": 3.29,
+  "Qnt. Estoque": 60,
+  "Categoria": "Limpeza",
+  "Subcategoria": "Louça",
+  "Marca Produto": "Ecover"
+ },
+ {
+  "Nome": "Vinho Branco",
+  "Valor Unit.": 7.99,
+  "Qnt. Estoque": 40,
+  "Categoria": "Bebidas",
+  "Subcategoria": "Vinhos",
+  "Marca Produto": "Concha y Toro"
+ },
+ {
+  "Nome": "Escova de Cabelo",
+  "Valor Unit.": 1.99,
+  "Qnt. Estoque": 80,
+  "Categoria": "Beleza",
+  "Subcategoria": "Acessórios",
+  "Marca Produto": "Vidal Sassoon"
+ },
+ {
+  "Nome": "Atum em Lata",
+  "Valor Unit.": 2.29,
+  "Qnt. Estoque": 90,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Enlatados",
+  "Marca Produto": "Gomes da Costa"
+ },
+ {
+  "Nome": "Protetor Solar",
+  "Valor Unit.": 8.49,
+  "Qnt. Estoque": 50,
+  "Categoria": "Beleza",
+  "Subcategoria": "Protetor Solar",
+  "Marca Produto": "Nivea"
+ },
+ {
+  "Nome": "Arroz Selvagem",
+  "Valor Unit.": 4.49,
+  "Qnt. Estoque": 70,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Grãos",
+  "Marca Produto": "Wild Blend"
+ },
+ {
+  "Nome": "Manteiga de Amendoim",
+  "Valor Unit.": 3.99,
+  "Qnt. Estoque": 40,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Condimentos",
+  "Marca Produto": "Skippy"
+ },
+ {
+  "Nome": "Frango Assado Pronto",
+  "Valor Unit.": 9.99,
+  "Qnt. Estoque": 80,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Pratos Prontos",
+  "Marca Produto": "Sadia"
+ },
+ {
+  "Nome": "Fraldas de Pano",
+  "Valor Unit.": 6.99,
+  "Qnt. Estoque": 60,
+  "Categoria": "Bebês",
+  "Subcategoria": "Fraldas",
+  "Marca Produto": "Modern Cloth"
+ },
+ {
+  "Nome": "Desodorante Roll-On",
+  "Valor Unit.": 2.79,
+  "Qnt. Estoque": 40,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Rexona"
+ },
+ {
+  "Nome": "Cogumelos em Conserva",
+  "Valor Unit.": 2.49,
+  "Qnt. Estoque": 100,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Enlatados",
+  "Marca Produto": "Bonduelle"
+ },
+ {
+  "Nome": "Gel de Banho",
+  "Valor Unit.": 3.29,
+  "Qnt. Estoque": 50,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Nivea"
+ },
+ {
+  "Nome": "Peixe Congelado",
+  "Valor Unit.": 6.99,
+  "Qnt. Estoque": 80,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Peixes",
+  "Marca Produto": "Gomes da Costa"
+ },
+ {
+  "Nome": "Condicionador Infantil",
+  "Valor Unit.": 3.49,
+  "Qnt. Estoque": 70,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Johnson's"
+ },
+ {
+  "Nome": "Mel",
+  "Valor Unit.": 5.99,
+  "Qnt. Estoque": 60,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Sobremesas",
+  "Marca Produto": "Apis"
+ },
+ {
+  "Nome": "Xampu para Cachorro",
+  "Valor Unit.": 4.49,
+  "Qnt. Estoque": 40,
+  "Categoria": "Pet Shop",
+  "Subcategoria": "Higiene",
+  "Marca Produto": "PetSmile"
+ },
+ {
+  "Nome": "Espumante",
+  "Valor Unit.": 12.99,
+  "Qnt. Estoque": 30,
+  "Categoria": "Bebidas",
+  "Subcategoria": "Vinhos",
+  "Marca Produto": "Chandon"
+ },
+ {
+  "Nome": "Creme Hidratante",
+  "Valor Unit.": 5.49,
+  "Qnt. Estoque": 60,
+  "Categoria": "Beleza",
+  "Subcategoria": "Hidratante",
+  "Marca Produto": "Nivea"
+ },
+ {
+  "Nome": "Chocolate Amargo",
+  "Valor Unit.": 2.99,
+  "Qnt. Estoque": 100,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Doces",
+  "Marca Produto": "Lindt"
+ },
+ {
+  "Nome": "Repelente de Insetos",
+  "Valor Unit.": 3.49,
+  "Qnt. Estoque": 80,
+  "Categoria": "Higiene",
+  "Subcategoria": "Repelentes",
+  "Marca Produto": "OFF!"
+ },
+ {
+  "Nome": "Salsichas Vegetarianas",
+  "Valor Unit.": 4.29,
+  "Qnt. Estoque": 50,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Vegetarianos",
+  "Marca Produto": "Tofurky"
+ },
+ {
+  "Nome": "Sabonete em Barra",
+  "Valor Unit.": 1.79,
+  "Qnt. Estoque": 120,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Lux"
+ },
+ {
+  "Nome": "Creme Antienvelhecimento",
+  "Valor Unit.": 9.99,
+  "Qnt. Estoque": 60,
+  "Categoria": "Beleza",
+  "Subcategoria": "Cuidados com a Pele",
+  "Marca Produto": "Olay"
+ },
+ {
+  "Nome": "Máscara Facial",
+  "Valor Unit.": 2.79,
+  "Qnt. Estoque": 100,
+  "Categoria": "Beleza",
+  "Subcategoria": "Cuidados com a Pele",
+  "Marca Produto": "Garnier"
+ },
+ {
+  "Nome": "Farinha de Aveia",
+  "Valor Unit.": 3.29,
+  "Qnt. Estoque": 80,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Cereais",
+  "Marca Produto": "Quaker"
+ },
+ {
+  "Nome": "Talco em Pó",
+  "Valor Unit.": 1.99,
+  "Qnt. Estoque": 40,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Johnson's"
+ },
+ {
+  "Nome": "Queijo Gorgonzola",
+  "Valor Unit.": 6.99,
+  "Qnt. Estoque": 70,
+  "Categoria": "Laticínios",
+  "Subcategoria": "Queijo",
+  "Marca Produto": "Gorgonzola"
+ },
+ {
+  "Nome": "Pasta de Amendoim",
+  "Valor Unit.": 4.49,
+  "Qnt. Estoque": 50,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Snacks",
+  "Marca Produto": "Peanut Butter & Co."
+ },
+ {
+  "Nome": "Lixa de Unhas",
+  "Valor Unit.": 0.99,
+  "Qnt. Estoque": 200,
+  "Categoria": "Beleza",
+  "Subcategoria": "Unhas",
+  "Marca Produto": "OPI"
+ },
+ {
+  "Nome": "Espuma de Barbear",
+  "Valor Unit.": 2.49,
+  "Qnt. Estoque": 60,
+  "Categoria": "Higiene",
+  "Subcategoria": "Barbear",
+  "Marca Produto": "Gillette"
+ },
+ {
+  "Nome": "Creme para as Mãos",
+  "Valor Unit.": 3.49,
+  "Qnt. Estoque": 90,
+  "Categoria": "Beleza",
+  "Subcategoria": "Cuidados com a Pele",
+  "Marca Produto": "Neutrogena"
+ },
+ {
+  "Nome": "Limpador Multiuso",
+  "Valor Unit.": 2.79,
+  "Qnt. Estoque": 80,
+  "Categoria": "Limpeza",
+  "Subcategoria": "Casa",
+  "Marca Produto": "Veja"
+ },
+ {
+  "Nome": "Biscoitos Integrais",
+  "Valor Unit.": 2.99,
+  "Qnt. Estoque": 100,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Biscoitos",
+  "Marca Produto": "BelVita"
+ },
+ {
+  "Nome": "Tônico Facial",
+  "Valor Unit.": 5.99,
+  "Qnt. Estoque": 70,
+  "Categoria": "Beleza",
+  "Subcategoria": "Cuidados com a Pele",
+  "Marca Produto": "Nivea"
+ },
+ {
+  "Nome": "Caneta Esferográfica",
+  "Valor Unit.": 0.99,
+  "Qnt. Estoque": 150,
+  "Categoria": "Material Escolar",
+  "Subcategoria": "Escrita",
+  "Marca Produto": "Bic"
+ },
+ {
+  "Nome": "Amaciante de Roupas",
+  "Valor Unit.": 2.49,
+  "Qnt. Estoque": 60,
+  "Categoria": "Limpeza",
+  "Subcategoria": "Lavanderia",
+  "Marca Produto": "Fofo"
+ },
+ {
+  "Nome": "Loção Corporal",
+  "Valor Unit.": 3.99,
+  "Qnt. Estoque": 70,
+  "Categoria": "Beleza",
+  "Subcategoria": "Cuidados com a Pele",
+  "Marca Produto": "Johnson's"
+ },
+ {
+  "Nome": "Agulhas de Tricô",
+  "Valor Unit.": 1.49,
+  "Qnt. Estoque": 90,
+  "Categoria": "Artesanato",
+  "Subcategoria": "Tricô",
+  "Marca Produto": "Clover"
+ },
+ {
+  "Nome": "Condicionador Infantil",
+  "Valor Unit.": 3.49,
+  "Qnt. Estoque": 50,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Johnson's"
+ },
+ {
+  "Nome": "Creme para os Pés",
+  "Valor Unit.": 4.99,
+  "Qnt. Estoque": 60,
+  "Categoria": "Beleza",
+  "Subcategoria": "Cuidados com a Pele",
+  "Marca Produto": "Neutrogena"
+ },
+ {
+  "Nome": "Escova de Dentes Infantil",
+  "Valor Unit.": 1.29,
+  "Qnt. Estoque": 100,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Colgate"
+ },
+ {
+  "Nome": "Cotonetes",
+  "Valor Unit.": 0.99,
+  "Qnt. Estoque": 80,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Johnson's"
+ },
+ {
+  "Nome": "Pão de Forma Integral",
+  "Valor Unit.": 2.79,
+  "Qnt. Estoque": 70,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Pães",
+  "Marca Produto": "Wickbold"
+ },
+ {
+  "Nome": "Desodorante Roll-On Infantil",
+  "Valor Unit.": 1.99,
+  "Qnt. Estoque": 60,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Johnson's"
+ },
+ {
+  "Nome": "Pasta de Dentes Infantil",
+  "Valor Unit.": 1.99,
+  "Qnt. Estoque": 50,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Colgate"
+ },
+ {
+  "Nome": "Água com Gás",
+  "Valor Unit.": 1.29,
+  "Qnt. Estoque": 90,
+  "Categoria": "Bebidas",
+  "Subcategoria": "Água",
+  "Marca Produto": "Crystal"
+ },
+ {
+  "Nome": "Enxaguante Bucal",
+  "Valor Unit.": 2.49,
+  "Qnt. Estoque": 60,
+  "Categoria": "Higiene",
+  "Subcategoria": "Pessoal",
+  "Marca Produto": "Listerine"
+ },
+ {
+  "Nome": "Frango Congelado",
+  "Valor Unit.": 5.49,
+  "Qnt. Estoque": 50,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Carnes",
+  "Marca Produto": "Sadia"
+ },
+ {
+  "Nome": "Caneta para Quadro Branco",
+  "Valor Unit.": 1.79,
+  "Qnt. Estoque": 40,
+  "Categoria": "Material Escolar",
+  "Subcategoria": "Escrita",
+  "Marca Produto": "Pilot"
+ },
+ {
+  "Nome": "Chocolate Branco",
+  "Valor Unit.": 2.99,
+  "Qnt. Estoque": 70,
+  "Categoria": "Alimentos",
+  "Subcategoria": "Doces",
+  "Marca Produto": "Nestlé"
+ }
+]

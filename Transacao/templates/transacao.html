@@ -1,0 +1,67 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title %}Transacao{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/transasao.css' %}">
+{% endblock %}
+    
+{% block content%}
+<div class="container-table">
+    <div class="rectangle">
+        <form class="d-flex align-items-center">
+            <input class="form-control me-2 w-100" type="search" id="searchInput" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-search" type="submit">
+                <i class="bi bi-search"></i>
+            </button>
+        </form>
+        <a href="{% url 'cadastrarTransacao_view' %}" class="btn btn-dark ms-auto">Cadastrar Transação</a>
+    </div>
+    <table class="table table-bordered table-responsive-lg">
+      <thead class="table-dark">
+          <tr>
+              <th scope="col">Operação</th>
+              <th scope="col">Data</th>
+              <th scope="col">Horário</th>
+              <th scope="col">Valor total</th>
+              <th scope="col">Fornecedor</th>
+              <th scope="col" colspan="2">Gerenciar</th>
+          </tr>
+      </thead>
+      <tbody id="transTable">
+        {% for transacao in transacoes %}
+            <tr>
+                <td>{{ transacao.tipoTransacao }}</td>
+                <td>{{ transacao.dataTransacao | date:'d/m/Y' }}</td>
+                <td>{{ transacao.horaTransacao | time:'H:i' }}</td>
+                <td>R$43,99</td>
+                <td>Batavo</td>
+                <td>
+                  <a href="{% url 'editarTransacao_view' transacao.idTransacao %}" class="btn btn-outline-primary btn-sm">Editar</a>
+                </td>
+                <td>
+                  <a href="{% url 'deletarTransacao_view' transacao.idTransacao %}" class="btn btn-outline-danger btn-sm">Deletar</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    
+  </table>
+</div>
+
+<script>
+    document.getElementById('searchInput').addEventListener('keyup', function() {
+  var input = this.value.toLowerCase();
+  var rows = document.querySelectorAll('#transTable tr');
+  rows.forEach(function(row) {
+    var cells = row.querySelectorAll('td');
+    var match = false;
+    cells.forEach(function(cell) {
+      if (cell.textContent.toLowerCase().includes(input)) {
+        match = true;
+      }
+    });
+    row.style.display = match || input === '' ? '' : 'none';
+  });
+});
+</script>
+{% endblock %}

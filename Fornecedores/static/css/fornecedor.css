@@ -1,0 +1,4 @@
+dl, ol, ul {
+    margin-top: 0; /* Definindo a margem superior como 0 */
+    margin-bottom: auto; /* Definindo a margem inferior como 0 */
+}

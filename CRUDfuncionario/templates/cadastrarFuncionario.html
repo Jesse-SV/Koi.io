@@ -1,0 +1,68 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+{% block title %}Cadastrar Funcionário{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/forms.css' %}">
+
+<button onclick="history.back(); return false;" class="btn btn-light" style="margin: 4px">
+    <i class="bi bi-arrow-return-left"></i>
+</button>
+
+<div class="retangulo_Editar">
+    <h2>Cadastrar Novo Funcionário</h2>
+    <form method="POST" action="{% url 'cadastrarFuncionario_view' %}">
+        {% csrf_token %}
+        <div class="form-group">
+            <div class="form-control_campos">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="username" maxlength="150" required>
+            </div>
+
+            <div class="form-control_campos">
+                <label for="enderecoFuncionario">Endereço:</label>
+                <input type="text" class="form-control" id="enderecoFuncionario" name="enderecoFuncionario" maxlength="255" required>
+            </div>
+
+            <div class="form-control_campos">
+                <label for="CPF">CPF:</label>
+                <input type="text" class="form-control" id="CPF" name="CPF" maxlength="14" required>
+            </div>
+
+            <div class="form-control_campos">
+                <label for="CEP">CEP:</label>
+                <input type="text" class="form-control" id="CEP" name="CEP" maxlength="8" required">
+            </div>
+
+            <div class="form-control_campos">
+                <label for="telefone">Telefone:</label>
+                <input type="text" class="form-control" id="telefone" name="telefone" maxlength="11" required>
+            </div>
+
+            <div class="form-control_campos">
+                <label for="password">Senha:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+
+            <div class="form-control_campos">
+                <label for="funcao">Função:</label>
+                <input type="text" class="form-control" id="funcao" name="funcao" maxlength="100" required>
+            </div>
+
+            <div class="form-control_campos">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" maxlength="254" required>
+            </div>
+        </div>
+        {% if messages %}
+            <div class="alert alert-danger" role="alert">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </div>
+        {% endif %}
+        <button type="submit" class="btn-submit">Cadastrar</button>
+    </form>
+</div>
+{% endblock %}

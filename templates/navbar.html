@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Importação do Bootstrap CSS -->
+    <link
+      rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Importação do jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Importação do Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Importação do CSS personalizado -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block extra_css %}{% endblock %}
+  </head>
+  <body>
+    <!-- "nav" representa uma seção de uma página que guia para outras páginas -->
+    <nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #273145;">
+      <div class="container-fluid">
+        <a href="" class="navbar-brand d-flex">Koio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-3">
+            <li class="nav-item {% if request.resolver_match.url_name == 'telainicial' %}active{% endif %}">
+              <a class="nav-link" href="{% url 'telainicial' %}">Dashboard<span class="sr-only">(current)</span></a>
+            </li> 
+            <li class="nav-item {% if request.resolver_match.url_name == 'produtos' %}active{% endif %}">
+              <a class="nav-link" href="{% url 'produtos' %}">Produtos</a>
+            </li>
+            <li class="nav-item {% if request.resolver_match.url_name == 'transacao_view' %}active{% endif %}">
+              <a class="nav-link" href="{% url 'transacao_view' %}">Transação</a>
+            </li>
+            <li class="nav-item {% if request.resolver_match.url_name == 'funcionarios' %}active{% endif %}">
+              <a class="nav-link" href="{% url 'funcionarios' %}">Funcionários</a>
+            </li>
+            <li class="nav-item {% if request.resolver_match.url_name == 'fornecedor' %}active{% endif %}">
+              <a class="nav-link" href="{% url 'fornecedor' %}">Fornecedor</a>
+            </li>
+            <form class="d-flex me-2">
+              <li class="nav-item dropdown {% if request.resolver_match.url_name == 'perfil' %}active{% endif %}">
+                <a class="nav-link dropdown-toggle" href="#" id="perfilDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Perfil
+                </a>
+                <div class="dropdown-menu" aria-labelledby="perfilDropdown">
+                  <a class="dropdown-item" href="{% url 'perfil' %}">Editar perfil</a>
+                  <a class="dropdown-item" href="{% url 'logout' %}">Sair</a>
+              </li>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-toggle").dropdown();
+
+        // Adicione um evento de clique para todos os itens de dropdown
+        $(".dropdown-item").on("click", function () {
+          // Fecha o dropdown ao clicar em qualquer item dentro dele
+          $(".dropdown-toggle").dropdown("hide");
+        });
+      });
+    </script>
+  </body>
+</html>

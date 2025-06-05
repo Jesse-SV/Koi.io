@@ -1,0 +1,53 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title %}Cadastrar Transacao{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/forms.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<button onclick="history.back(); return false;" class="btn btn-light" style="margin: 4px">
+    <i class="bi bi-arrow-return-left"></i>
+</button>
+
+{% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+<div class="retangulo_Editar">
+    <h2>Cadastrar Nova Transação</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <div class="form-control_campos">
+                <label for="dataTransacao">Data</label>
+                <input type="date" class="form-control"  id="dataTransacao" name="dataTransacao" required>
+
+                <label for="horaTransacao">Horario</label>
+                <input type="time" class="form-control"  id="horaTransacao" name="horaTransacao" required>
+
+                <div class="Select-Fornecedor">
+                    <label class="form-label" for="idFornecedor">Fornecedor:</label>
+                    <select class="idFornecedor form-select" id="idFornecedor" name="idFornecedor">
+                        {% for fornecedor in fornecedores %}
+                            <option value="{{ fornecedor.idFornecedor }}">{{ fornecedor.nomeFornecedor }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                
+                <label class="form-label" for="tipoTransacao">Tipo:</label>
+                <select class="tipoTransacao form-select" id="tipoTransacao" name="tipoTransacao" required>
+                    <option value="ENTRADA">ENTRADA</option>
+                    <option value="SAIDA">SAIDA</option>
+                </select>   
+            </div>
+        </div>
+        <button type="submit" class="btn-submit">Cadastrar</button>
+    </form>
+</div>
+
+{% endblock %}

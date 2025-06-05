@@ -1,0 +1,69 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title %}Update Transação{% endblock %}
+<link rel="stylesheet" href="{% static 'css/forms.css' %}">
+{% block content%}
+
+<button onclick="history.back(); return false;" class="btn btn-light" style="margin: 4px">
+  <i class="bi bi-arrow-return-left"></i>
+</button>
+
+<div class="d-flex">
+  <div class="retangulo_dir col-md-4 d-flex justify-content-center align-items-center">
+    <div class="row">
+        <div class="col-12"> 
+            <div class="title_Editar">Editar Transação</div>
+            <form action="{% url 'updateTransacao_view' transacao.idTransacao %}" class="editar-form" method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <div class="form-control_campos">
+                        <label for="dataTransacao">Data</label>
+                        <input type="date" class="form-control" id="dataTransacao" name="dataTransacao" value="{{transacao.dataTransacao}}" required>
+                    </div>
+
+                    <div class="Select-Fornecedor">
+                        <label class="form-label" for="tipoTransacao">Tipo:</label>
+                        <select class="idTransacao form-select" id="tipoTransacao" name="tipoTransacao" value="{{transacao.tipoTransacao}}" required>
+                            <option value="ENTRADA">ENTRADA</option>
+                            <option value="SAIDA">SAIDA</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">Atualizar</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <div class="col-md-8">
+        <table class="table table-striped table-responsive-lg">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Fornecedor</th>
+                    <th scope="col">Transação</th>
+                    <th scope="col">Valor Unitário</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Subcategoria</th>
+                    <th scope="col">Marca</th>
+                </tr>
+            </thead>
+            <tbody id="productTable">
+                {% for produto in produtos %}
+                <tr>
+                    <td>{{ produto.idProduto }}</td>
+                    <td>{{ produto.nomeProduto }}</td>
+                    <td>{{ produto.idFornecedor.nomeFornecedor }}</td>
+                    <td>{{ produto.idTransacao.idTransacao }}</td>
+                    <td>{{ produto.valorUnit }}</td>
+                    <td>{{ produto.categoria }}</td>
+                    <td>{{ produto.subCategoria }}</td>
+                    <td>{{ produto.marcaProduto }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

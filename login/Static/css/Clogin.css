@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* Estilo para o corpo da página */
+body {
+    background: #EBEBEB;
+}
+
+.title{
+    position: absolute;
+    top: 5%;
+    left: 160px;
+    width: 142px;
+    height: 21px;
+    flex-shrink: 0;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.title_koi{
+    position: relative;
+    top: 5px;
+    left: -70px;
+    width: 277px;
+    height: 61px;
+    flex-shrink: 0;
+    color: #FFF;
+
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.title_login{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Estilo para o retângulo principal */
+.retangulo {
+    width: 812px;
+    height: 530px;
+    background: linear-gradient(90deg, #C833B0 -75.99%, #FF5722 106.42%, #FF6347 106.44%);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+/* Estilo para o retângulo de login */
+.retangulo .retangulo_login {
+    width: 350px;
+    height: 530px;
+    background-color: #F5F5F5;
+    filter: drop-shadow(20px 20px 23px rgba(0, 0, 0, 0.25));
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.container-koio{
+    position: absolute;
+    top: 20%;
+    left: 7%;
+}
+
+/* Estilo para o formulário de login */
+.login-form {
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex; /* Torna o formulário um flex container */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.custom-form-control {
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    position: relative;
+}
+
+.custom-form-control input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1.5px solid #000;
+    background: rgba(222, 222, 222, 0.93);
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Estilo para o botão de envio */
+.btn-submit {
+    width: 209px;
+    height: 43px;
+    flex-shrink: 0;
+    padding: 12px 45px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #C833B0 -75.99%, #FF5722 106.42%, #FF6347 106.44%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-transform: uppercase;
+    color: #FFFF;
+    
+}
+
+/* Estilo para o texto "Esqueci minha senha" */
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+    color: #818181;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
