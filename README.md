@@ -7,6 +7,8 @@
 [![Bootstrap 5](https://img.shields.io/badge/frontend-Bootstrap%205-purple)](https://getbootstrap.com/)
 [![Plotly Dash](https://img.shields.io/badge/visualization-Plotly%20Dash-orange)](https://dash.plotly.com/)
 
+![logo](koio.png)
+
 > Um painel de controle sofisticado para gestão de estoque e visualização de dados empresariais.
 
 ---
