@@ -1,4 +1,4 @@
-# 🐟 Koi.io
+# Koi.io
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/Rodolfoovo/projetoIntegrador)
 [![Python](https://img.shields.io/badge/python-3.12%2B-blue)](https://www.python.org/downloads/)
