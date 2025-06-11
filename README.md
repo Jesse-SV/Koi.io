@@ -11,7 +11,6 @@
 
 ---
 ![logo](koio.png)
----
 
 ## 📊 Visão Geral
 
