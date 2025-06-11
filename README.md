@@ -1,7 +1,6 @@
 # 🐟 Koi.io
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/Rodolfoovo/projetoIntegrador)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.12%2B-blue)](https://www.python.org/downloads/)
 [![Django](https://img.shields.io/badge/framework-Django-092E20?logo=django)](https://www.djangoproject.com/)
 [![SQLite](https://img.shields.io/badge/database-SQLite-lightgrey)](https://www.sqlite.org/)
@@ -48,8 +47,8 @@
 ## 🚀 Instalação
 
 ```bash
-git clone https://github.com/Rodolfoovo/projetoIntegrador.git
-cd projetoIntegrador
+git clone https://github.com/Jesse-SV/Koi.io.git
+cd Koi.io
 
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
