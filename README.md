@@ -28,7 +28,6 @@
 - 📦 Gestão de estoque com histórico
 - 👥 Gerenciamento de usuários com permissões
 - 📋 Relatórios e indicadores operacionais
-- 🔎 Filtros e segmentações por tipo, fornecedor, data etc.
 - 🧾 Cadastro e edição de produtos, fornecedores e transações
 
 ## 💻 Tecnologias
@@ -37,7 +36,6 @@
 - **Frontend:** HTML, CSS, Bootstrap 5
 - **Gráficos:** Plotly Dash
 - **Banco de Dados:** SQLite
-- **Bibliotecas:** Pandas
 
 ## ⚙️ Requisitos
 
